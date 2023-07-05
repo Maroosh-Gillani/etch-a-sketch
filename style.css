@@ -1,0 +1,13 @@
+:root {
+    --square-size: 40px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(16, var(--square-size));
+}
+.square {
+    width: var(--square-size);
+    height: var(--square-size);
+    border: 1px solid silver;
+}
