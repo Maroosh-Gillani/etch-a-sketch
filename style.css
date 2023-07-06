@@ -2,9 +2,15 @@
     --square-size: 40px;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+}
+
 #container {
     display: grid;
     grid-template-columns: repeat(16, var(--square-size));
+    border: 5px double dodgerblue;
 }
 .square {
     width: var(--square-size);
