@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
         for (let i = 0; i < gridSize; i++) {
             for (let j = 0; j < gridSize; j++) {
                 const div = document.createElement('div');
-                div.classList.add('square');
+                // div.classList.add('square');
 
                 div.style.width = `${squareSize}px`; // Set width of the square
                 div.style.height = `${squareSize}px`; // Set height of the square
@@ -75,9 +75,11 @@ document.addEventListener('DOMContentLoaded', function () {
     colorButton.addEventListener('click', function () {
         if (!colorButtonFlag) {
             colorButtonFlag = true;
+            colorButton.style.backgroundColor = "#21c2af";
         }
         else {
             colorButtonFlag = false;
+            colorButton.style.backgroundColor = "#F0F0F0";
         }
     });
 
