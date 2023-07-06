@@ -56,11 +56,30 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
 
                 if (isMousePressed) {
-                    div.style.backgroundColor = "#000000";
+                    if (colorButtonFlag) {
+                        let randomColor = Math.floor(Math.random() * 16777215).toString(16);
+                        div.style.backgroundColor = '#'+randomColor;
+                    }
+                    else {
+                        div.style.backgroundColor = "#000000";
+                    }
                 }
             });
         });
     }
+
+    // Randomize Color
+    const colorButton = document.querySelector('.colorChange');
+    let colorButtonFlag = false;
+
+    colorButton.addEventListener('click', function () {
+        if (!colorButtonFlag) {
+            colorButtonFlag = true;
+        }
+        else {
+            colorButtonFlag = false;
+        }
+    });
 
     generateGrid();
 
@@ -84,6 +103,5 @@ document.addEventListener('DOMContentLoaded', function () {
             generateGrid();
         }
     }
-
 
 });
