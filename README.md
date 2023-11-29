@@ -4,6 +4,9 @@
 * Scalable grid size from 16x16 to 100x100, allowing for detailed or larger-scale drawings.
 * Can be accessed here: https://maroosh-gillani.github.io/etch-a-sketch/
 
+<img width="450" alt="image" src="https://github.com/Maroosh-Gillani/etch-a-sketch/assets/76667567/ee97ce74-589c-4f10-8fa1-47cb042307d9">
+
+
 Usage:
 
 1. Open the application in a web browser.
